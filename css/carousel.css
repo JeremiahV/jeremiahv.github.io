@@ -37,6 +37,14 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+.carousel-caption h1:first-child {
+  animation-delay: 1s;
+}
+
+.carousel-caption p:first-child {
+  animation-delay: 2s;
+}
+
 /* Carousel base class */
 .carousel {
   height: 500px;
@@ -51,7 +59,6 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #777;
 }
 .carousel-inner > .item > img {
   position: absolute;

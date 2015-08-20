@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
     <title>The Potter's House | NE</title>
 
@@ -17,6 +18,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="js/animate.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,6 +29,7 @@
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -89,8 +92,8 @@
 				<div class="carousel-inner">
 					<div class="item active" id="slide1">
 						<div class="carousel-caption">
-							<h1 style="font-size: 70px;">Welcome</h1>
-							<p style="font-size: 30px;">We're excited to have you come and join our services!</p>
+							<h1 data-animation="animated fadeInUp" style="font-size: 70px;">Welcome</h1>
+							<p data-animation="animated fadeInRight" style="font-size: 30px;">We're excited to have you come and join our services!</p>
 						</div><!-- end carousel-caption-->
 					</div><!-- end item -->
 					
@@ -170,15 +173,66 @@ upcoming events.</p>
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <br>
-          <br>
-          <h2 class="featurette-heading">Listen to our <span class="text-muted">2015 Harvesters!</span></h2>
-          <a class="btn btn-info" href="sermons.html" role="button">Click Here! &raquo;</a>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block img-circle" src="img/luis.jpg" alt="Generic placeholder image">
-        </div>
+        <section id="carousel">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-8 col-md-offset-2">
+        			  <h1 style="text-align: center;" id="quote-title">2015 Harvesters Conference</h1>
+                <!--<div class="quote"><i style="font-size: 3.7em;" class="fa fa-quote-left fa-4x"></i></div>-->
+        				<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="11000">
+        				  <!-- Carousel indicators -->
+                    <ol class="carousel-indicators" id="quotes">
+        				    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+        				    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+        				    <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+        				  </ol>
+        				  <!-- Carousel items -->
+        				  <div class="carousel-inner">
+        				    <div class="active item">
+        				    	<blockquote>
+        				    	  <h3 data-animation="animated fadeInRight">Tuesday PM</h3>
+        				    		<p data-animation="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+        				    		<h4 data-animation="animated fadeInRight">- Pastor John Doe</h4>
+        				    	</blockquote>
+        				    	<div data-animation="animated fadeInRight" class="profile-circle" style="background-color: rgba(0,0,0,.2);"> <img src="img/me.jpg">
+        				    	</div>
+        				    	<br>
+        				    	<div data-animation="animated fadeInRight" style="text-align: center;">
+          				    	<a class="btn btn-info" href="gallery.html" role="button">Listen Here! &raquo;</a>
+        				    	</div>
+        				    </div>
+        				    <div class="item">
+        				    	<blockquote>
+        				    	  <h3 data-animation="animated fadeInRight">Wednesday PM</h3>
+        				    		<p data-animation="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+        				    		<h4 data-animation="animated fadeInRight">- Pastor John Doe</h4>
+        				    	</blockquote>
+        				    	<div data-animation="animated fadeInRight" class="profile-circle" style="background-color: rgba(77,5,51,.2);">
+        				    	</div>
+        				    	<br>
+        				    	<div data-animation="animated fadeInRight" style="text-align: center;">
+          				    	<a class="btn btn-info" href="gallery.html" role="button">Listen Here! &raquo;</a>
+        				    	</div>
+        				    </div>
+        				    <div class="item">
+        				    	<blockquote>
+        				    	  <h3 data-animation="animated fadeInRight">Thursday PM</h3>
+        				    		<p data-animation="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+        				    		<h4>- Pastor John Doe</h4>
+        				    	</blockquote>
+        				    	<div data-animation="animated fadeInRight" class="profile-circle" style="background-color: rgba(145,169,216,.2);">
+        				    	</div>
+        				    	<br>
+        				    	<div data-animation="animated fadeInRight" style="text-align: center;">
+          				    	<a class="btn btn-info" href="gallery.html" role="button">Listen Here! &raquo;</a>
+        				    	</div>
+        				    </div>
+        				  </div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
       </div>
 
       <hr class="featurette-divider">
@@ -216,5 +270,6 @@ upcoming events.</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.8.1/holder.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/animate.js"></script>
   </body>
 </html>
