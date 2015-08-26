@@ -113,7 +113,7 @@ section {
 .modal-dialog {width:600px;}
 .thumbnail {margin-bottom:6px;}
 
-.carousel {
+#modalCarousel {
     height: 300px;
     margin-bottom: 10%;
 }
