@@ -15,11 +15,6 @@
 
 #slide1 {
 	background: url('../img/slide1.jpg') top center no-repeat ;
-<<<<<<< HEAD
-=======
-	
-  
->>>>>>> 2ba5dc94711689236ab89897dbe5287b6f4190d3
 }
 
 #slide2 {
@@ -27,11 +22,7 @@
 }
 
 #slide3 {
-<<<<<<< HEAD
 	background: url('../img/upcoming2.jpg') top center no-repeat;
-=======
-	background: url('../img/arrow.jpg') top center no-repeat;
->>>>>>> 2ba5dc94711689236ab89897dbe5287b6f4190d3
 }
 
 /*-------------------------------*/
@@ -89,12 +80,8 @@ section {
 }
 
 #quotes {
-<<<<<<< HEAD
     margin-bottom: 78px!important;
-    
-=======
     margin-bottom: 90px;
->>>>>>> 2ba5dc94711689236ab89897dbe5287b6f4190d3
 }
 
 #carousel {
@@ -111,9 +98,9 @@ section {
   height:100%;
   border-radius: 100px;
 }
-<<<<<<< HEAD
 
 /** Gallery CSS **/
+
 .modal-dialog {}
 .thumbnail {margin-bottom:6px;}
 
@@ -122,5 +109,11 @@ section {
   margin-top:10%;
   width:5%;
 }
-=======
->>>>>>> 2ba5dc94711689236ab89897dbe5287b6f4190d3
+
+.modal-dialog {width:600px;}
+.thumbnail {margin-bottom:6px;}
+
+.carousel {
+    height: 300px;
+    margin-bottom: 10%;
+}
